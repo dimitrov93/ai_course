@@ -1,4 +1,5 @@
 import OpenAI from 'openai';
+import { Context } from '../types/ai';
 
 const openAI = new OpenAI();
 
@@ -16,7 +17,7 @@ function getOrderStatus(orderId: string) {
 }
 
 async function callOpenAIWithTools() {
-  const context: OpenAI.Chat.ChatCompletionMessageParam[] = [
+  const context: Context = [
     {
       role: 'system',
       content:

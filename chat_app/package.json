@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node -r ts-node/register --env-file=.env src/tools/index.ts"
+    "dev": "node -r ts-node/register --env-file=.env src/flight_assistant/index.ts"
   },
   "keywords": [],
   "author": "",

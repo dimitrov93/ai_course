@@ -25,7 +25,11 @@ async function createChatCompletion() {
     deleteOlderMessages();
   }
 
-  console.log(`${response.choices[0].message.role}: ${response.choices[0].message.content}`);
+  const GREEN = '\x1b[32m';
+  const RESET = '\x1b[0m';
+  console.log(
+    `${GREEN}${response.choices[0].message.role}: ${response.choices[0].message.content}${RESET}`
+  );
 }
 
 process.stdin.addListener('data', async function (input) {

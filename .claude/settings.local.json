@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm i:*)",
+      "Bash(node --import tsx --env-file=.env src/tools/index.ts)",
+      "Bash(npm uninstall:*)"
+    ]
+  }
+}
